@@ -4,6 +4,11 @@ class IrcdIrc2 < Formula
   url "http://www.irc.org/ftp/irc/server/irc2.11.2p3.tgz"
   version "2.11.2p3"
   sha256 "be94051845f9be7da0e558699c4af7963af7e647745d339351985a697eca2c81"
+  # The `:cannot_represent` is for:
+  # * International Business Machines, Inc. license in ircd/nameser_def.h
+  # * Digital Equipment Corporation. license in the following ircd/ files:
+  #   nameser_def.h, res_comp.c, res_init.c, res_mkquery.c and resolv_def.h
+  license all_of: ["GPL-1.0-or-later", "GPL-2.0-or-later", "BSD-4-Clause-UC", "ISC", :cannot_represent]
 
   livecheck do
     url "http://www.irc.org/ftp/irc/server/"
