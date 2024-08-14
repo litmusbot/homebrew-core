@@ -1,8 +1,8 @@
 class MariadbAT112 < Formula
   desc "Drop-in replacement for MySQL"
   homepage "https://mariadb.org/"
-  url "https://archive.mariadb.org/mariadb-11.2.4/source/mariadb-11.2.4.tar.gz"
-  sha256 "e16f152a6b60bec0938051a8340e410d33e0708d1f84a2cf38f1b04e4133bf19"
+  url "https://archive.mariadb.org/mariadb-11.2.5/source/mariadb-11.2.5.tar.gz"
+  sha256 "25866734488ca09f212c3b1a5b4ac63cbb5d865787087a37ed6d7fe6fc124eb1"
   license "GPL-2.0-only"
 
   livecheck do
@@ -39,6 +39,7 @@ class MariadbAT112 < Formula
   depends_on "pkg-config" => :build
   depends_on "groonga"
   depends_on "lz4"
+  depends_on "openjdk"
   depends_on "openssl@3"
   depends_on "pcre2"
   depends_on "xz"
