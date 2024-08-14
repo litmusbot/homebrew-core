@@ -1,8 +1,8 @@
 class MariadbAT105 < Formula
   desc "Drop-in replacement for MySQL"
   homepage "https://mariadb.org/"
-  url "https://archive.mariadb.org/mariadb-10.5.25/source/mariadb-10.5.25.tar.gz"
-  sha256 "9619d0f51e864357466b2c63301a34a53f7dfd99f18c4fd452fab22bf39ba64e"
+  url "https://archive.mariadb.org/mariadb-10.5.26/source/mariadb-10.5.26.tar.gz"
+  sha256 "dd5f99a1d30ae47365fc18b1deeff6dc0ab38ac84e7d9fd9c8c04ff6b01961f1"
   license "GPL-2.0-only"
 
   livecheck do
@@ -36,7 +36,9 @@ class MariadbAT105 < Formula
   depends_on "bison" => :build
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
+
   depends_on "groonga"
+  depends_on "openjdk"
   depends_on "openssl@3"
   depends_on "pcre2"
 
